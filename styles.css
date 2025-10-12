@@ -1,0 +1,424 @@
+/* General */
+/* Establece márgenes y relleno a cero y utiliza "border-box" para calcular el tamaño incluyendo bordes y relleno. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global para el cuerpo del documento */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;/* Define la fuente principal del sitio. */
+    color: #6a6e58; /* Establece el color del texto en blanco. */
+    line-height: 1.6; /* Mejora la legibilidad al establecer la altura de línea. */
+    background-color: #EFD5F2;
+}
+
+/* Estilo del encabezado */
+header {
+    position: fixed; /* Hace que el encabezado permanezca visible al hacer scroll. */
+    top: 0; /* Lo posiciona en la parte superior de la página. */
+    width: 100%; /* Abarca todo el ancho de la ventana. */
+    background-color: #76910a; /* Fondo semitransparente para contraste. */
+    padding: 20px 20px; /* Espaciado interno para los elementos del encabezado. */
+    display: flex; /* Utiliza diseño flexible para organizar los elementos horizontalmente. */
+    justify-content: space-between; /* Distribuye los elementos en extremos opuestos. */
+    align-items: righ; /* Alinea verticalmente los elementos del encabezado. */
+    z-index: 1000; /* Asegura que el encabezado esté siempre encima de otros elementos. */
+}
+
+nav {
+    display: flex ;
+    margin-top: 8px;
+    margin-left: auto;
+}
+
+
+
+/* Navegación dentro del encabezado */
+header nav ul {
+    list-style: none; /* Elimina los puntos de lista predeterminados. */
+    display: flex; /* Muestra los elementos de la lista en una fila. */
+    gap: 2em; /* Espaciado entre los elementos de la lista. */
+    margin-top: 0.4rem;
+    margin-left: 15px;
+}
+
+/* Estilo de los enlaces de la barra de navegación */
+header nav ul li a {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces. */
+    color: #ffffff; /* Color de texto blanco. */
+    font-weight: bold; /* Resalta los enlaces con texto en negrita. */
+    padding: 5px 10px; /* Espaciado interno en los enlaces. */
+    border-radius: 4px; /* Bordes redondeados para los enlaces. */
+    transition: background-color 0.7s; /* Suaviza el cambio de color de fondo (opcional). */
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+header nav ul li a:hover {
+    color: #6a6e58; /* Cambia el color del texto a negro. */
+    background-color: #76910a;
+}
+
+/* Espaciado superior para evitar solapamiento con el encabezado fijo */
+main {
+    padding-top: 80px; /* Ajusta el contenido para que no quede cubierto. */
+}
+
+/* Sección de contenido */
+section {
+    min-height: 60vh; /* Cada sección ocupa al menos el 100% de la altura de la ventana. */
+    min-width: 100%;
+    padding: 60px 20px; /* Espaciado interno para el contenido. */
+    text-align: center; /* Centra el texto. */
+    background-color: white; /* Fondo semitransparente para legibilidad. */
+    margin-bottom: 20px; /* Espaciado entre secciones. */
+    justify-content: center;
+}
+
+/* Títulos dentro de las secciones */
+section h2 {
+    font-size: 2.5em; /* Tamaño grande para destacar títulos. */
+    margin-bottom: 20px; /* Espaciado inferior para separación del texto. */
+    color: #6a6e58; /* Azul claro para los títulos. */
+}
+
+/* Texto y listas dentro de las secciones */
+section p, section ul {
+    font-size: 1.2em; /* Tamaño más grande para mejorar legibilidad. */
+    margin: 10px 0; /* Espaciado superior e inferior. */
+}
+
+
+#inicio{
+    display: flex;
+    overflow: auto;
+    
+}
+
+#inicio h2{
+    font-size: 4em;
+    margin-top: 100px;
+
+}
+#inicio h3{
+    color: ##324218;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+.inicio img{
+    min-width: 40%;
+    
+} 
+
+.inicio{
+    margin: 50px 0px;
+}
+
+#sobre-nosotros{
+    display: flex;
+    overflow: auto;
+    
+    
+    
+}
+
+.nosotros img{
+    object-fit: contain;
+}
+
+.nosotros{
+    margin: 50px 50px 34px ;  
+
+}
+
+.nosotros h2{
+    margin-top: 150px;
+    font-size: 3em;
+    color: #6a6e58;
+}
+
+#servicios{
+    overflow: auto;
+}
+
+#servicios div{
+    border-radius: 10px;
+
+}
+
+
+#servicios div img{
+    max-width: 100%;
+    object-fit: contain;
+    
+    
+}
+
+
+.servicios2{
+    display: flex;
+    
+    
+}
+
+.tarjetas div{
+    max-width: 50%;
+
+}
+.tarjetas{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #76910a;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    margin: 15px;
+}
+
+#precios{
+    overflow: auto;
+}
+
+.precios{
+    margin: 30px;
+    min-width: 30%;
+    min-height: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #76910a;
+    padding: 15px;
+    
+}
+
+.precios h3{
+
+    margin-top: 10px;
+
+
+}
+.precios img{
+    margin-top: 80px;
+    min-width: 170px;
+    
+}
+
+
+
+.planes{
+    display: flex;
+}
+
+#contacto{
+    display: flex;
+    background: url('Contacto.jpg');
+    overflow: auto;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+/* Contenedor del formulario */
+.form-container {
+    margin: 180px 80px 30px;
+    width: 100%; /* Ocupa el 100% del ancho disponible. */
+    max-width: 500px; /* Limita el ancho máximo del formulario. */
+    max-height: 450px;
+    background-color: #ffffff; /* Fondo blanco para contraste. */
+    padding: 20px; /* Espaciado interno del formulario. */
+    border-radius: 8px; /* Bordes redondeados para un diseño más agradable. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad. */
+
+    
+}
+
+.mapa{
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.mapa iframe{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Título del formulario */
+.form-container h2 {
+    text-align: center; /* Centra el texto del título. */
+    color: #6a6e58; /* Azul oscuro para resaltar. */
+    margin-bottom: 20px; /* Espaciado inferior para separar del formulario. */
+
+}
+
+/* Campos del formulario */
+.form-container input, .form-container textarea {
+    width: 100%; /* Ocupa todo el ancho del contenedor. */
+    padding: 10px; /* Espaciado interno para comodidad al escribir. */
+    margin-bottom: 15px; /* Espaciado inferior entre los campos. */
+    border: 1px solid #ccc; /* Borde gris claro. */
+    border-radius: 5px; /* Bordes redondeados. */
+    font-size: 16px; /* Tamaño de texto estándar. */
+}
+
+/* Botón de envío del formulario */
+.form-container button {
+    width: 100%; /* Ocupa todo el ancho disponible. */
+    padding: 10px; /* Espaciado interno. */
+    background-color: #6a6e58; /* Fondo azul oscuro. */
+    color: #ffffff; /* Texto blanco. */
+    font-size: 16px; /* Tamaño del texto del botón. */
+    border: none; /* Sin borde adicional. */
+    border-radius: 5px; /* Bordes redondeados. */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón. */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color. */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.form-container button:hover {
+    background-color: #dfcc19; /* Azul más oscuro al pasar el cursor. */
+}
+
+/* Pie de página */
+footer {
+    text-align: center; /* Centra el texto. */
+    padding: 20px; /* Espaciado interno. */
+    background-color: #76910a; /* Fondo semitransparente. */
+    position: relative; /* Permite posicionarlo según el flujo normal del documento. */
+    color: #ffffff; /* Texto blanco. */
+    font-size: 0.9em; /* Texto más pequeño para el pie. */
+}
+
+/* ========================
+    Diseño responsive
+   ======================== */
+
+/* Para tablets y pantallas medianas */
+@media (max-width: 768px) {
+        
+
+
+
+}
+
+/* Para móviles y pantallas pequeñas */
+@media (max-width: 480px) {
+    header {
+        padding: 10px; /* Reduce el espacio interno del encabezado para optimizar el espacio disponible. */
+    }
+
+    header h1 {
+        font-size: 1.2em; /* Reduce el tamaño del título aún más para pantallas más pequeñas. */
+    }
+
+    header nav ul{
+        margin-top:0 ;
+        margin-left: 0;
+    }
+
+    
+
+    header nav ul li a{
+        font-size: 0.5em;
+        padding: 0;
+    }
+
+
+
+    nav {
+        flex-direction: row;
+        
+    }
+
+    nav div img{
+        max-width: 40%;
+    }
+
+
+    #inicio{
+        flex-wrap: wrap;
+    }
+
+    #inicio h2{
+        font-size: 2em;
+        margin: 2%;
+    }
+
+    #inicio h3{
+        font-size: 1em;
+    }
+
+    .inicio img{
+        max-width: 100%;
+    }
+
+    .inicio{
+        margin: 0 0;
+    }
+
+
+
+    #sobre-nosotros{
+        flex-wrap: wrap;
+    }
+
+    .nosotros img{
+        max-width: 100%;
+    }
+
+    .tarjetas div{
+        min-width: 100%;
+    }
+    .tarjetas{
+        min-width: 100%;
+        flex-wrap: wrap;
+        margin: 15px 0;
+    }
+
+
+    .servicios2{
+        flex-wrap: wrap;
+    }
+
+    .planes{
+        flex-wrap: wrap;
+    }
+
+    .precios{
+        margin:10px;
+    }
+
+    .precios img{
+        max-width: 70px;
+        margin-top: 0;
+    }
+
+    #contacto{
+        flex-wrap: wrap;
+    }
+
+    .mapa{
+        margin: 0px;
+        max-height: none;
+    }
+
+
+    .mapa iframe{
+        max-width: 300px;
+        max-height: 50%;
+    }
+
+    .form-container {
+        padding: 15px; /* Disminuye el espacio interno del formulario para que sea más compacto en móviles. */
+        max-width: 100%; /* Asegura que el formulario ocupe todo el ancho de la pantalla en móviles. */
+        margin: 20px 0;
+    }
+
+    footer {
+        font-size: 0.8em; /* Reduce el tamaño del texto en el pie de página para pantallas pequeñas. */
+    }
+}
