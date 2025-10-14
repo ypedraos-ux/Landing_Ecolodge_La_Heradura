@@ -210,17 +210,6 @@ section p, section ul {
     box-shadow: 0 4px 6px #6a6e58;
 }
 
-.mapa {
-    margin-top: 20px;
-    margin-left: 200px;
-}
-
-.mapa iframe {
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 6px #6a6e58;
-}
-
 /* Título del formulario */
 .form-container h2 {
     text-align: center;
