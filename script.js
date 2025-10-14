@@ -9,4 +9,4 @@ document.querySelectorAll('nav ul li a').forEach(link => {
             behavior: 'smooth'
         });
     });
-});
+}); 

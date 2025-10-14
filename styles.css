@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
 /* Estilo global para el cuerpo del documento */
 body {
@@ -168,7 +167,7 @@ section p, section ul {
 
 }
 .tarjetas{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px #6a6e58;
     border: 1px solid #76910a;
     display: flex;
     width: 50%;
@@ -187,7 +186,7 @@ section p, section ul {
     min-width: 30%;
     min-height: 800px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px #6a6e58;
     border: 1px solid #76910a;
     padding: 15px;
     
@@ -230,7 +229,7 @@ section p, section ul {
     background-color: #ffffff; /* Fondo blanco para contraste. */
     padding: 20px; /* Espaciado interno del formulario. */
     border-radius: 8px; /* Bordes redondeados para un diseño más agradable. */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad. */
+    box-shadow: 0 4px 6px #6a6e58; /* Sombra para dar profundidad. */
 
     
 }
@@ -243,7 +242,7 @@ section p, section ul {
 .mapa iframe{
     border-radius: 5px;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px #6a6e58;
     
 }
 
@@ -402,7 +401,6 @@ footer {
         height: auto;
         margin-top: 20px;
     }
-    ...
 }
     #contacto{
         flex-wrap: wrap;
@@ -415,13 +413,13 @@ footer {
 
 
     .mapa iframe{
-        max-width: 300px;
-        max-height: 50%;
+        max-width: 800px;
+        max-height: 100%;
     }
 
     .form-container {
         padding: 15px; /* Disminuye el espacio interno del formulario para que sea más compacto en móviles. */
-        max-width: 100%; /* Asegura que el formulario ocupe todo el ancho de la pantalla en móviles. */
+        max-width: auto; /* Asegura que el formulario ocupe todo el ancho de la pantalla en móviles. */
         margin: 20px 0;
     }
 
